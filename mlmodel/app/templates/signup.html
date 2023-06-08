@@ -1,0 +1,115 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cancer Diagnosis</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #00b4db, #0083b0);
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      width: 400px;
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    }
+
+    h2 {
+      text-align: center;
+      color: #333;
+      font-family: 'Roboto', Arial, sans-serif;
+      font-weight: 600;
+      letter-spacing: 2px;
+      margin-bottom: 30px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+      color: #333;
+      font-family: 'Montserrat', Arial, sans-serif;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-family: 'Roboto', Arial, sans-serif;
+      font-size: 14px;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: #4caf50;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-family: 'Montserrat', Arial, sans-serif;
+      font-size: 16px;
+      letter-spacing: 1px;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Sign up</h2>
+    <form  onsubmit="return validateForm()" method="post">
+       <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your Name">
+      </div>
+      <div class="form-group">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" placeholder="Enter your username">
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password">
+      </div>
+       <div class="form-group">
+        <label for="confirmpass">Confirm password:</label>
+        <input type="password" id="confirmpass" name="confirmpass" placeholder="Confirm your password">
+      </div>
+      <button type="submit">Sign up</button>
+    </form>
+  </div>
+</body>
+<script>
+function validateForm(){
+var x = document.getElementById("username").value;
+var y = document.getElementById("password").value;
+if(x==""){
+alert("Enter valid username");
+return false;
+}
+if(y.length<8){
+alert("Enter valid password");
+return false;
+}
+}
+</script>
+</html>

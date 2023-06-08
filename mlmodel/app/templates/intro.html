@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cancer Diagnosis</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .header {
+      background-color: #8bbff3;
+      color: #fff;
+      padding: 60px 0;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 48px;
+      margin: 0;
+      letter-spacing: 2px;
+    }
+
+    p {
+      font-size: 20px;
+      margin: 20px 0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px;
+      text-align: center;
+    }
+
+    .cta-button {
+      display: inline-block;
+      background-color: #e67e22;
+      color: #fff;
+      padding: 18px 36px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-size: 24px;
+      letter-spacing: 1px;
+      transition: background-color 0.3s ease;
+      margin-top: 20px;
+    }
+
+    .cta-button:hover {
+      background-color: #d35400;
+    }
+
+    .login-button {
+      display: inline-block;
+      background-color: #007bff;
+      color: #fff;
+      padding: 5px 10px;
+      border-radius: 4px;
+      text-decoration: none;
+      font-size: 18px;
+      transition: background-color 0.3s ease;
+      margin-top: -40px;
+      margin-right:10px;
+      float:right;
+    }
+
+    .login-button:hover {
+      background-color: #0056b3;
+    }
+   .signup-button {
+      display: inline-block;
+      background-color: #007bff;
+      color: #fff;
+      padding: 4px 10px;
+      border-radius: 4px;
+      text-decoration: none;
+      font-size: 18px;
+      transition: background-color 0.3s ease;
+      margin-top: -40px;
+      margin-right:90px;
+      float:right;
+    }
+
+    .signup-button:hover {
+      background-color: #0056b3;
+    }
+
+    .features {
+      margin-top: 60px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .feature {
+      width: 30%;
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .feature-icon {
+      font-size: 40px;
+      color: #f1c40f;
+      margin-bottom: 20px;
+    }
+
+    .feature-title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .feature-description {
+      font-size: 16px;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+ <a href="{{ url_for('login') }}" class="login-button">Login</a>
+ <a href="{{ url_for('signup') }}" class="signup-button">Sign up</a>
+    <h1>Cancer Diagnosis</h1>
+  </div>
+  <div class="container">
+    <p>We understand that receiving a cancer diagnosis can be an overwhelming and life-changing experience. We are here to provide you with comprehensive information, support, and resources to empower you on your cancer journey. It is crucial to consult with your healthcare team for personalized guidance and treatment options tailored to your specific diagnosis and needs.</p>
+    <div class="features">
+      <div class="feature">
+        <i class="feature-icon">&#128640;</i>
+        <h2 class="feature-title">User-Friendly</h2>
+        <p class="feature-description">Having to deal with a dysfunctional website, or a slow website can be irritating. Navigate through our intuitive and user-friendly interface, ensuring a seamless and enjoyable experience.</p>
+      </div>
+      <div class="feature">
+        <i class="feature-icon">&#128170;</i>
+        <h2 class="feature-title">Our Mission</h2>
+        <p class="feature-description">Our mission is to ensure that individuals and their loved ones have access to information about cancer diagnosis, treatment options, and the emotional and practical aspects of living with cancer.</p>
+      </div>
+      <div class="feature">
+        <i class="feature-icon">&#9889;</i>
+        <h2 class="feature-title">Efficiency</h2>
+        <p class="feature-description">Efficiency is a key feature of our ML Model designed to speed up the diagnosis process, allowing treatment methods to be figured out faster.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
